@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Drive test</title>
+    <link href="" rel="stylesheet" type="text/css">
+    <link href="css/style.css" rel="stylesheet" type="text/css">
+<!--
+    <link rel="stylesheet" href="https://pyscript.net/latest/pyscript.css" />
+    <script defer src="https://pyscript.net/latest/pyscript.js"></script>
+-->
+</head>
+<body>
+    <h1>TEST</h1>
+    <form action="/drive" method="post" enctype="multipart/form-data">
+        <input type="file" name="file">
+        <input type="submit">
+    </form>
+    <a href="/drive/AllDelete" name="delete_key">All Delete</a>
+    <br>
+    {% for i in img%}
+        <img src="/drive/{{i}}">
+    {% endfor %}
+</body>
+<!--
+<py-script>
+    print("Hello")
+    #n = int(input())
+    #for i in range(n):
+    #    print(i)
+</py-script>
+-->
+
+</html>

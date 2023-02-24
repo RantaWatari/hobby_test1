@@ -1,0 +1,220 @@
+
+
+/* baseColor */
+:root {
+	--main-color:#808080;
+	--accent-color:#e10000;
+	--dark-main-color:#2B5566;
+	--text-bright-color:#fff;
+}
+
+body{
+	margin: 0;
+	font-family:'メイリオ','Hiragino Kaku Gothic Pro',sans-serif;
+}
+
+/* ###################################	header	####################################### */
+
+header{
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 100;
+	width: 100%;
+	background-color: rgba(255,255,255,0.75);
+}
+
+.headA{
+	display: inline-block;
+	line-height: 30px;
+	padding-left: 15px;
+	padding-right: 15px;
+	background-color: var(--accent-color);
+	color: #000000;
+	font-family: Monotype Corsiva;
+	font-size: 18px;
+	text-decoration: none;
+}
+
+.header a:hover{
+	text-decoration: underline;
+}
+
+/*##################### .con ######################*/
+
+.con{
+	margin: 0px 0px;
+	color: #fff;
+	background-color: #333333;
+}
+
+.con .photoA{
+	min-height: 500px;
+	background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url('../img/CaesarShiftCipher/caesar.jpg');
+	background-position: center;
+	background-size: cover;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	text-align:center;
+}
+
+.photoA h1{
+	margin-top: 0;
+	margin-bottom: 20px;
+	font-family: Monotype Corsiva;
+	font-size:40px;
+}
+
+.photoA strong{
+	margin-top: 0;
+	margin-bottom: 0px;
+	font-family: Monotype Corsiva;
+	font-size:15px;
+}
+
+.photoA ol{
+	margin-top: 0;
+	margin-bottom: 0;
+	font-size:14px;
+}
+
+.con h3{
+	margin-top: 0px;
+	margin-bottom: 10px;
+	font-size: 20px;
+}
+
+.con h4{
+	margin-top: 0px;
+	margin-bottom: 10px;
+	font-size: 15px;
+}
+.con .test1{
+	font-size: 1px;
+}
+.con .test3{
+	font-style: normal;
+}
+.con .test2{
+	font-style: normal;
+	font-size: 1.5vw;
+	font-size: clamp(10px,1.5vw,30px);
+}
+
+.con p{
+	margin-top: 0px;
+	margin-bottom: 20px;
+	font-size: 12px;
+	line-height: 1.8;
+}
+
+
+ img{
+	background-size: cover;
+	object-fit: contain;
+	width: 30vw;
+	height: auto;
+	border: solid 5px red;
+}
+
+.con .text{
+	padding: 50px;
+}
+
+
+.urlA{
+	display: inline-block;
+	margin-top: 20px;
+	padding: 7.5px 13px;
+	border: solid 2px currentColor;
+	border-radius: 6px;
+	background-color: #fff;
+	font-size:13px;
+	color: #000000;
+	text-decoration: none;
+}
+
+.con a:hover{
+	background-image: linear-gradient(rgba(0,0,0,0.25),rgba(0,0,0,0.25));
+}
+
+
+@media screen and (max-width: 600px) {
+	.con .test3{
+		color: yellow;
+		font-size: 30px;
+	}
+}
+
+@media screen and (min-width: 600px){
+	.con .test3{
+		color: blue;
+		font-size: 20px;
+	}
+}
+
+@media screen and (min-width: 786px){
+	.con .container{
+		display: flex;
+		margin-left: auto;
+		margin-right: auto;
+	}
+
+	.con .photoA{
+		flex: 3;
+	}
+
+	.con .text{
+		flex: 5;
+		padding: 50px;
+		width: flex;
+		height: 500px;
+		overflow:auto;
+	}
+	.con .test3{
+		color: red;
+		font-size: 10px;
+	}
+
+}
+
+@media screen and (min-width: 992px){
+
+	.con .test3{
+		color: green;
+	}
+}
+
+@media screen and (min-width: 1200px){
+
+	.con .test3{
+		color: black;
+	}
+}
+
+
+/* ###################################	footer	####################################### */
+footer{
+	color: #fff;
+	background-color: #2B5566;
+}
+
+footer .container{
+	padding: 30px 25px;
+}
+
+.footA h2{
+	margin-top: 0px;
+	margin-bottom: 20px;
+	font-family: Monotype Corsiva;
+	font-size: 28px;
+}
+
+.footA p{
+	margin-top: 10px;
+	margin-bottom: 0px;
+	font-size: 13px;
+}
+

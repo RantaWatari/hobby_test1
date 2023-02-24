@@ -1,0 +1,35 @@
+h1{
+    color: blue;
+}
+
+.con .contA{
+	min-height: 500px;
+	background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url('../img/CaesarShiftCipher/caesar.jpg');
+	background-position: center;
+	background-size: cover;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	text-align:center;
+}
+
+@media (min-width: 768px){
+	.con .container{
+		display: flex;
+		margin-left: auto;
+		margin-right: auto;
+	}
+
+	.con .contA{
+		flex: 3;
+	}
+
+	.con .contB{
+		flex: 5;
+		padding: 50px 50px;
+		width: flex;
+		height: 500px;
+		overflow:auto;
+	}
+}
